@@ -20,14 +20,14 @@
       <input class="pass" type="password" align="center" placeholder="Password" name="password">
       <!--<a class="submit" align="center">Connect</a>-->
       <button type="submit" align="center"class="submit">Connect</button>
-      
+     </form> 
       <div align="center" th:if="${param.error}">
           <p class="red">Incorrect Login or Password!</p>
       </div>
       <div align="center" style="margin-top: 30px;" th:if="${param.logout}">
          <p class="green">You have been logged out</p>
       </div>
-      <p class="forgot" align="center"><a href="#">Forgot Password?</p>         
+      <p class="forgot" align="center"><a th:href="@{/admin/forgotPassword}">Forgot Password?</p>     
  </div>
      
 </body>
